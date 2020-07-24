@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>All In Us</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+	
+	<script language="JavaScript" type="text/javascript">
+		
+		function validation(){
+			var name = document.getElementById("name").value;
+			var email = document.getElementById("email").value;
+			var subject = document.getElementById("subject").value;
+			var message = document.getElementById("message").value;
+			var error_message = document.getElementById("error_message");
+			
+			<!--alert(name);-->
+			if(name.length <3){
+				text="Please enter valid name";
+				error_message.innerHTML = text;
+				return false;
+			}
+			
+			if(subject.length <3){
+				text="Please enter valid subject";
+				error_message.innerHTML = text;
+				return false;
+			}
+			
+			if(email.indexOf("@")== -1){
+				text="Please enter valid Email";
+				error_message.innerHTML = text;
+				return false;
+			}
+			if(message.length <3){
+				text="Please enter more words";
+				error_message.innerHTML = text;
+				return false;
+			}
+			alert("Submitted Successfully")
+			return false;
+		
+		}
+		
+		function showText(text){
+			document.getElementById("text").innerHTML=text;
+		}
+		function hide(){
+			document.getElementById("text").innerHTML="";
+		}
+		
+	</script>
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Navbar Area -->
+        <div class="oneMusic-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="oneMusicNav">
+
+                        <!-- Nav brand -->
+                        <a href="index.php" class="nav-brand" style="color:white">ALL IN US</a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.php">Home</a></li>
+                                    <li><a href="albums-store.html">Albums</a></li>                                   
+                                    <li><a href="event.php">Events</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+
+                                <!-- Login/Register-->
+                                <div class="login-register-cart-button d-flex align-items-center">
+                                    <!-- Login/Register -->
+                                    <div class="login-register-btn mr-50">
+                                        <a href="signup.php" id="loginBtn">Login / Sign Up</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Nav End -->
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Breadcumb Area Start ##### -->
+    <section class="breadcumb-area bg-img bg-overlay" style="background-image: url(img/bg-img/breadcumb3.jpg);">
+        <div class="bradcumbContent">
+            <p>See what’s new</p>
+            <h2>Latest Albums</h2>
+        </div>
+    </section>
+    <!-- ##### Breadcumb Area End ##### -->
+
+    <!-- ##### Album Catagory Area Start ##### -->
+    <section class="album-catagory section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="browse-by-catagories catagory-menu d-flex flex-wrap align-items-center mb-70">
+                        <a href="#" data-filter="*">Show All</a>
+                        <a href="#" data-filter=".a">A</a>
+                        <a href="#" data-filter=".b">B</a>
+                        <a href="#" data-filter=".c">C</a>
+                        <a href="#" data-filter=".d">D</a>
+                        <a href="#" data-filter=".e">E</a>
+                        <a href="#" data-filter=".f">F</a>
+                        <a href="#" data-filter=".g">G</a>
+                        <a href="#" data-filter=".h">H</a>
+                        <a href="#" data-filter=".i">I</a>
+                        <a href="#" data-filter=".j">J</a>
+                        <a href="#" data-filter=".k">K</a>
+                        <a href="#" data-filter=".l">L</a>
+                        <a href="#" data-filter=".m">M</a>
+                        <a href="#" data-filter=".n">N</a>
+                        <a href="#" data-filter=".o">O</a>
+                        <a href="#" data-filter=".p">P</a>
+                        <a href="#" data-filter=".q">Q</a>
+                        <a href="#" data-filter=".r">R</a>
+                        <a href="#" data-filter=".s">S</a>
+                        <a href="#" data-filter=".t">T</a>
+                        <a href="#" data-filter=".u">U</a>
+                        <a href="#" data-filter=".v">V</a>
+                        <a href="#" data-filter=".w">W</a>
+                        <a href="#" data-filter=".x">X</a>
+                        <a href="#" data-filter=".y">Y</a>
+                        <a href="#" data-filter=".z">Z</a>
+                        <a href="#" data-filter=".number">0-9</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row oneMusic-albums">
+
+                <!-- Single Album -->
+                <div class="col-12 col-sm-4 col-md-3 col-lg-2 single-album-item c">
+                    <div class="single-album">
+                        <img src="img/bg-img/5sos.jpg">
+                        <div class="album-info">
+                            <h5><i>C A L M</i></h5>
+                            <p>Release on: 27 Mar 2020</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Album -->
+                <div class="col-12 col-sm-4 col-md-3 col-lg-2 single-album-item t">
+                    <div class="single-album">
+                        <img src="img/bg-img/todiefor.jpg">
+                        <div class="album-info">
+                            <h5>To Die For</h5>
+                            <p>Release on: 14 Feb 2020</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Album -->
+                <div class="col-12 col-sm-4 col-md-3 col-lg-2 single-album-item g">
+                    <div class="single-album">
+                        <img src="img/bg-img/godmenu.jpg" style="height:160px;width:240px">
+                        <div class="album-info">
+                            <h5>GO LIVE</h5>
+                            <p>Release on: 17 Jun 2020</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Album -->
+                <div class="col-12 col-sm-4 col-md-3 col-lg-2 single-album-item b">
+                    <div class="single-album">
+                        <img src="img/bg-img/beautifulppl.png">
+                        <div class="album-info">
+                            <h5>Beautiful People</h5>
+                            <p>Release on: 28 Jun 2019</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Album -->
+                <div class="col-12 col-sm-4 col-md-3 col-lg-2 single-album-item number">
+                    <div class="single-album">
+                        <img src="img/bg-img/2002.jpg" >
+                        <div class="album-info">
+                            <h5>2002</h5>
+                            <p>Release on: 20 Apr 2018</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Album -->
+                <div class="col-12 col-sm-4 col-md-3 col-lg-2 single-album-item i">
+                    <div class="single-album">
+                        <img src="img/bg-img/itzicy.jpg">
+                        <div class="album-info">
+                            <h5>IT'Z ICY</h5>
+                            <p>Release on: 29 Jul 2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Album Catagory Area End ##### -->
+	
+	<br><br><br><br>
+
+    <!-- ##### Video Area Start ##### -->
+	<div class="add-area mb-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+				    <center><h5>2002 [Official Acoustic Video]</h5> by Anne Marie &amp Ed Sheeran </center>
+					<div class="adds">	
+						<center>
+						<video id="vid" width="700" height="400">
+						<source src="audio/2002.mp4" type="video/mp4">
+						  Sorry, your browser does not support this video.
+						</video>
+						<br>
+						<button class="btn oneMusic-btn" onclick="playVid()" type="button">Play</button>
+						<button class="btn oneMusic-btn" onclick="pauseVid()" type="button">Pause</button>
+						</center>
+						<script> 
+						var myVid = document.getElementById("vid");
+						function playVid() { 
+						 myVid.play(); 
+						} 
+						function pauseVid() { 
+						 myVid.pause(); 
+						} 
+						</script> 
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="add-area mb-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+				    <center><h5>Location Unknown ◐ (feat. Georgia)</h5> by Honne</center>
+					<div class="adds">	
+						<center>
+						<video id="vid1" width="700" height="400">
+						<source src="audio/locationunknown.mp4" type="video/mp4">
+						  Sorry, your browser does not support this video.
+						</video>
+						<br>
+						<button class="btn oneMusic-btn" onclick="playVid1()" type="button">Play</button>
+						<button class="btn oneMusic-btn" onclick="pauseVid1()" type="button">Pause</button>
+						</center>
+						<script> 
+						var myVid1 = document.getElementById("vid1");
+						function playVid1() { 
+						 myVid1.play(); 
+						} 
+						function pauseVid1() { 
+						 myVid1.pause(); 
+						} 
+						</script> 
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+    <div class="add-area mb-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+					<center><h5>Wannabe</h5> by ITZY(있지)</center>
+                    <div class="adds">
+						<center>
+                        <a href="https://www.youtube.com/watch?v=fE2h3lGlOsk">
+						<img src="img/bg-img/itzywannabe.jpg" onMouseOver="showText('Click to view music video')" onMouseOut="hide();"></a>
+						<div id="text"></div>
+						</center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Video Area End ##### -->
+
+    <!-- ##### Song Area Start ##### -->
+	<h2 style="text-align:center">Recommended Songs</h2><br>
+    <div class="one-music-songs-area mb-70">
+        <div class="container">
+            <div class="row">
+			
+				<!-- Single Song Area -->
+                <div class="col-12">
+                    <div class="single-song-area mb-30 d-flex flex-wrap align-items-end">
+                        <div class="song-thumbnail">					
+                            <img src="img/bg-img/5sos.jpg" onMouseOver="alert('High is one of the song in album CALM by 5SOS')">
+							<div id="text"></div>
+                        </div>
+                        <div class="song-play-area">
+                            <div class="song-name">
+                                <p>High</p>
+                            </div>
+                            <audio preload="auto" controls>
+                                <source src="audio/high.mp3">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+			
+                <!-- Single Song Area -->
+                <div class="col-12">
+                    <div class="single-song-area mb-30 d-flex flex-wrap align-items-end">
+                        <div class="song-thumbnail">
+                            <img src="img/bg-img/dalladalla.png" onmouseover="alert('Dalla Dalla (Korean: 달라달라) is the debut single by South Korean girl group Itzy, released by JYP Entertainment on February 12, 2019.')">
+                        </div>
+                        <div class="song-play-area">
+                            <div class="song-name">
+                                <p>Dalla Dalla (달라달라)</p>
+                            </div>
+                            <audio preload="auto" controls>
+                                <source src="audio/dalladalla.mp3">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Song Area -->
+                <div class="col-12">
+                    <div class="single-song-area mb-30 d-flex flex-wrap align-items-end">
+                        <div class="song-thumbnail">
+                            <img src="img/bg-img/beautifulppl.png" onMouseOver="alert('Beautiful People is a song by English singer-songwriter Ed Sheeran featuring American singer Khalid. Atlantic Records released it on 28 June 2019, as the third single from his fourth studio album, No.6 Collaborations Project (2019). ')">
+                        </div>
+                        <div class="song-play-area">
+                            <div class="song-name">
+                                <p>Beautiful People</p>
+                            </div>
+                            <audio preload="auto" controls>
+                                <source src="audio/beautifulppl.mp3">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Song Area -->
+                <div class="col-12">
+                    <div class="single-song-area mb-30 d-flex flex-wrap align-items-end">
+                        <div class="song-thumbnail">
+                            <img src="img/bg-img/beautynthebeast.jpg" onMouseOver="alert('How Does a Moment Last Forever is a song written by lyricist Tim Rice and composer Alan Menken for the Disney live action film Beauty and the Beast (2017), a remake of the animated musical of the same name. ')">
+                        </div>
+                        <div class="song-play-area">
+                            <div class="song-name">
+                                <p>How Does A Moment Last Forever</p>
+                            </div>
+                            <audio preload="auto" controls>
+                                <source src="audio/howdoesamomentlastforever.mp3">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ##### Song Area End ##### -->
+
+    <!-- ##### Contact Area Start ##### -->
+    <section class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img" style="background-image: url(img/bg-img/bg-2.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading white">
+                        <p>See what’s new</p>
+                        <h2>Get In Touch</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <!-- Contact Form Area -->
+                    <div class="contact-form-area">
+						<div id="error_message" style="color:white; text-align:center"></div>
+						
+                        <form id="contactUs" onsubmit="return validation()">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="name" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="email" placeholder="E-mail">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button class="btn oneMusic-btn mt-30" type="submit">Send <i class="fa fa-angle-double-right"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Contact Area End ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row d-flex flex-wrap align-items-center">
+                <div class="col-12 col-md-6">
+                    <a href="index.html" style="color:white">ALL IN US</a>
+                    <p class="copywrite-text"><a href="#">
+						Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script> 
+						All rights reserved | This template is made by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+					</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+</body>
+
+</html>
